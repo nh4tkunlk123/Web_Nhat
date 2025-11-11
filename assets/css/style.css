@@ -1,0 +1,124 @@
+/* ==== RESET ==== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdfd;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background-color: #d62828 !important; /* đỏ ấm */
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+  color: #ffe066 !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #ffe066 !important; /* vàng nhẹ cho trang hiện tại */
+}
+
+/* ==== HERO BANNER ==== */
+.hero {
+  background: url('../img/banner-food.jpg') center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* lớp phủ mờ tối nhẹ */
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Nút "Xem Thực Đơn" */
+.hero a.btn {
+  background-color: #ffba08;
+  color: #333;
+  border: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  transition: 0.3s ease;
+}
+
+.hero a.btn:hover {
+  background-color: #ffd166;
+  transform: translateY(-2px);
+}
+
+/* ==== MENU SECTION ==== */
+#menu h2 {
+  color: #d62828;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* ==== CARD MÓN ĂN ==== */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card .card-title {
+  font-weight: 600;
+  color: #222;
+}
+
+.card .card-text {
+  font-weight: 500;
+}
+
+.btn-success {
+  background-color: #40916c;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #52b788;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #d62828;
+  color: #fff;
+  padding: 15px 0;
+  font-weight: 500;
+}

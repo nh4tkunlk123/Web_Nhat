@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký - Gọi Món Nhanh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger px-4">
+    <a class="navbar-brand fw-bold" href="index.html">🍜 Gọi Món Nhanh</a>
+  </nav>
+
+  <section class="d-flex align-items-center justify-content-center" style="height: 90vh;">
+    <div class="card shadow p-4" style="width: 400px;">
+      <h3 class="text-center text-danger fw-bold mb-4">Đăng ký</h3>
+      <form id="register-form">
+        <div class="mb-3">
+          <label class="form-label">Họ và tên</label>
+          <input type="text" class="form-control" id="fullname" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Mật khẩu</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <button class="btn btn-warning w-100 fw-bold">Tạo tài khoản</button>
+        <p class="text-center mt-3">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("register-form").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("✅ Đăng ký thành công (demo)");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
